@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mr BowTie | Custom made Bow Ties</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Monda|Montserrat:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="https://kit.fontawesome.com/035cbc1ef6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="bacground">
+        <img id="bg-main" class="bacground-img" src="assets/img/3.jpg" alt="Mr BowTie | Custom made Bow Ties">
+    </div>
+    <div id="wrapper">
+        <main id="main">
+            <nav id="top">
+                <div id="logo">
+                    <a href="#"><img src="assets/img/logo.png" alt="MrBowTie"></a>
+                </div>
+                <ul id="social">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </nav>
+            <ul id="navigation">
+                <li onclick="document.getElementById('main').scrollIntoView({ behavior: 'smooth'});"><a
+                        id="nav-main">Home</a></li>
+                <li onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth'});"><a
+                        id="nav-gallery">Gallery</a></li>
+                <li onclick="document.getElementById('ourTeam').scrollIntoView({ behavior: 'smooth'});"><a
+                        id="nav-contact">Team</a></li>
+                <li onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth'});"><a
+                        id="nav-contact">Contact & Order</a></li>
+            </ul>
+            <section id="header">
+                <h1>One of a kind Bow Ties for your every opportunity.</h1>
+                <h2>Only for You.</h2>
+                <div class="hr"></div>
+                <a id="order"
+                    onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth'});">Order</a>
+            </section>
+            <div id="arrowContainer">
+                <i id="arrow" class="fas fa-chevron-down"
+                    onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth'});"></i>
+            </div>
+        </main>
+        <article id="gallery">
+            <div class="row">
+                <div class="column">
+                    <img src="assets/img/1.jpg">
+                    <img src="assets/img/5.jpg">
+                    <img src="assets/img/4.jpg">
+                </div>
+                <div class="column removeTop">
+                    <img src="assets/img/9.jpg">
+                    <img src="assets/img/6.jpg">
+                    <img src="assets/img/7.jpg">
+                </div>
+                <div class="column removeTop">
+                    <img src="assets/img/8.jpg">
+                    <img src="assets/img/10.jpg">
+                    <img src="assets/img/2.jpg">
+                </div>
+            </div>
+        </article>
+        <div id="ourTeam">
+            <div class="team">
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="assets/img/rista.png" alt="Team_image">
+                    </div>
+                    <h3>Nikola Ristanovic</h3>
+                    <p class="role">Designer</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas
+                        facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="assets/img/coa.png" alt="Team_image">
+                    </div>
+                    <h3>Aleksandar Cvetanovic</h3>
+                    <p class="role">Designer</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas
+                        facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="assets/img/daca.png" alt="Team_image">
+                    </div>
+                    <h3>Danilo Lazarevic</h3>
+                    <p class="role">Designer</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas
+                        facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+            </div>
+        </div>
+        <article id="contact">
+            <section id="left">
+                <h3>Our work</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, totam. Magnam recusandae neque
+                    reiciendis sapiente debitis ab ipsa dolorem beatae modi, repellat amet perspiciatis minus molestias
+                    explicabo sequi. Molestiae, commodi!</p>
+                <h3 id="second">Info & Order</h3>
+                <ul>
+                    <li><i class="fas fa-location-arrow"></i><a href="#"> Belgrade, Serbia</a></li>
+                    <li><i class="fas fa-phone-alt"></i><a href="#"> 00 381 65 694 3939</a></li>
+                    <li><i class="fas fa-envelope"></i><a href="#"> info@mrbowie.com</a></li>
+                    <li><i class="fas fa-link"></i><a href="#"> www.mrbowtie.com</a></li>
+                </ul>
+            </section>
+            <section id="right">
+                <h3>Contact </h3>
+                <p>Do not hesitate to ask us any questions and you can also order via the following form.</p>
+                <form id="contact-form" action="mailer.php" method="post">
+                    <input placeholder="Name" id="name" type="text" name="name" />
+                    <input placeholder="Email" id="email" type="text" name="email" />
+                    <textarea placeholder="Message" id="message" name="message" rows="8"></textarea>
+                    <input id="submit" type="button" name="submit" value="Send" />
+                </form>
+            </section>
+        </article>
+        <footer id="footer">
+            <p>Copyright &copy 2020 <span>MrBowTie</span>. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
